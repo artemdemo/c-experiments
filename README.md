@@ -18,7 +18,7 @@ Main configuration is in `.vscode/tasks.json` Notice some important things:
 ## How to include headers
 
 You need manually add needed C files to `args` array in `tasks.json`, for example:
-```
+```js
 {
     "tasks": [
         {
@@ -40,3 +40,7 @@ You need manually add needed C files to `args` array in `tasks.json`, for exampl
 
 * https://www.youtube.com/watch?v=-CpG3oATGIs (4:38:52)
 * https://www.youtube.com/channel/UCnf1w1jAZva7YE9RR3lSxtg/videos
+
+## Lynda courses
+
+* [C Essential Training](https://www.lynda.com/C-tutorials/C-Essential-Training/164457-2.html)
