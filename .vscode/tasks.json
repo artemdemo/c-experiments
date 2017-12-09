@@ -8,10 +8,12 @@
             "type": "shell",
             "command": "g++",
             "args": [
+                "-std=c11",
                 "-g",
                 "-x",
                 "c",
-                "main.c"
+                "main.c",
+                "myLibrary.c"
             ],
             "group": {
                 "kind": "build",

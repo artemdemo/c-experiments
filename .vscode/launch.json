@@ -8,13 +8,21 @@
             "name": "(lldb) Launch",
             "type": "cppdbg",
             "request": "launch",
+            "targetArchitecture": "x64",
             "program": "${workspaceFolder}/a.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
-            "MIMode": "lldb"
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "g++"
         }
     ]
 }

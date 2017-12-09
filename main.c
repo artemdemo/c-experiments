@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+#include "myLibrary.h"
+
+#define MAX_LENGTH 21.8
+#define WORK_WEEK 5
+
+int main(void)
 {
-    for (int i = 0; i < 10; i++)
-    {
-        printf("the value of i=%d \n", i);
-    }
-    return 0;
-}
+    function1();
+    return EXIT_SUCCESS;
+};
