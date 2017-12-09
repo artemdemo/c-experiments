@@ -15,20 +15,32 @@ Main configuration is in `.vscode/tasks.json` Notice some important things:
 * Which builded file to run on debug defined here: `.vscode/launch.json`
 * Breakpoints work, you need to rebuild app after placing them.
 
-## How to include headers
+## g++ args
 
-You need manually add needed C files to `args` array in `tasks.json`, for example:
+Open `.vscode/tasks.json`:
+
 ```js
 {
     "tasks": [
         {
             //...
             "args": [
+                // Which standart to use
+                "-std=c11",
+                // Generate source level debug information
+                // (remove this flag for production ready code)
                 "-g",
+                // Input language (c++ is default)
                 "-x",
                 "c",
+                // Output file name
+                "-o",
+                "program.out",
+                // Main app
                 "main.c",
-                "myLibary.c" // <- module
+                // Module, you need to add it manually here,
+                // if you're importing it in your main app
+                "myLibary.c"
             ],
             // ...
         }
@@ -38,8 +50,7 @@ You need manually add needed C files to `args` array in `tasks.json`, for exampl
 
 ## Tutorials
 
-* https://www.youtube.com/watch?v=-CpG3oATGIs (4:38:52)
-* https://www.youtube.com/channel/UCnf1w1jAZva7YE9RR3lSxtg/videos
+* https://www.youtube.com/watch?v=-CpG3oATGIs (4:38:52) - basic tutorial; use x2 speed, otherwise it's unbearable.
 
 ## Lynda courses
 

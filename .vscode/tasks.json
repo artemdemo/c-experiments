@@ -12,6 +12,8 @@
                 "-g",
                 "-x",
                 "c",
+                "-o",
+                "program.out",
                 "main.c",
                 "myLibrary.c"
             ],
