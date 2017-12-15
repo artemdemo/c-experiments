@@ -14,7 +14,7 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": false,
+            "externalConsole": true,
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -22,7 +22,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "g++"
+            "MIMode": "lldb"
         }
     ]
 }

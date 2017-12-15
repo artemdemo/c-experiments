@@ -48,6 +48,24 @@ Open `.vscode/tasks.json`:
 } 
 ```
 
+## launch.json
+
+This file contains settings for debuggin
+
+```js
+{
+    "configurations": [
+        {
+            // External console is important.
+            // For instance when you debuggin `scanf` (and `externalConsole` is `false` )
+            // debug mode will stop working on input
+            "externalConsole": true,
+            // ...
+        }
+    ]
+} 
+```
+
 ## Tutorials
 
 * https://www.youtube.com/watch?v=-CpG3oATGIs (4:38:52) - basic tutorial; use x2 speed, otherwise it's unbearable.
