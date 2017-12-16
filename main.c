@@ -1,22 +1,37 @@
+/*
+ ============================================================================
+ Name        : 07_02.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Passing variables to functions, Ansi-style
+ 	 	 	   This is an example of functional programming, in which the
+ 	 	 	   user interacts with an ATM to debit or credit an account.
+ 	 	 	   The program performs 3 transactions. The last two transactions
+ 	 	 	   also include adding a monetary gift to the account.
+ ============================================================================
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void)
-{
-    puts("Enter the height (in cm):");
+// #include "balance.h"
 
-    float height;
-    scanf("%f", &height);
+#include "./smth/constants.h"
 
-    float height_inches = height / 2.54;
-    int height_feet = height_inches / 12;
-    double delta_inches = height_inches - (height_feet * 12);
+void printBar(int length);
 
-    printf(
-        "Your height is %d feet and %.1f inches.",
-        height_feet,
-        delta_inches
-    );
+int main(void) {
+    printf("%d\n", MAX_VALUE);
+    printBar(10);
+    printBar(5);
+    printBar(23);
+	return EXIT_SUCCESS;
+}
 
-    return EXIT_SUCCESS;
-};
+void printBar(int length) {
+    for(int i = 0; i < length; i++) {
+        printf("▓");
+    }
+    printf(" %d\n", length);
+}

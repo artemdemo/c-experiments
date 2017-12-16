@@ -14,8 +14,7 @@
                 "c",
                 "-o",
                 "program.out",
-                "main.c",
-                "myLibrary.c"
+                "main.c"
             ],
             "group": {
                 "kind": "build",
