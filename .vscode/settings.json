@@ -1,6 +1,7 @@
 {
     "files.associations": {
-        "mylibrary.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "stdio.h": "c",
+        "todomodel.h": "c"
     }
 }
